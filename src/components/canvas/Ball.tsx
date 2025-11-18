@@ -1,4 +1,4 @@
-import  { Suspense } from 'react';
+import { Suspense, memo } from 'react';
 import { Canvas } from '@react-three/fiber';
 import {
   Decal,
@@ -13,7 +13,7 @@ interface IProps {
   icon: string;
   techName: string;
 }
-const Ball = (props: { imgUrl: string }) => {
+const Ball = memo((props: { imgUrl: string }) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
@@ -37,9 +37,11 @@ const Ball = (props: { imgUrl: string }) => {
       </mesh>
     </Float>
   );
-};
+});
 
-const BallCanvas = ({ icon, techName }: IProps) => {
+Ball.displayName = 'Ball';
+
+const BallCanvas = memo(({ icon, techName }: IProps) => {
   return (
     <div className="w-28 h-28 relative group cursor-pointer">
       <Canvas
@@ -50,7 +52,9 @@ const BallCanvas = ({ icon, techName }: IProps) => {
         <Suspense fallback={<CanvasLoader />}>
           <OrbitControls
             enableZoom={false}
+            enablePan={false}
             rotateSpeed={0.1}
+            autoRotate={false}
           />
           <Ball imgUrl={icon} />
         </Suspense>
@@ -61,6 +65,8 @@ const BallCanvas = ({ icon, techName }: IProps) => {
       </div>
     </div>
   );
-};
+});
+
+BallCanvas.displayName = 'BallCanvas';
 
 export default BallCanvas;
