@@ -24,9 +24,9 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* <div className="absolute inset-0 md:ml-[30%] overflow-hidden z-1"> */}
+      <div className="absolute inset-0 md:ml-[30%] overflow-hidden z-1">
         <ComputersCanvas />
-      {/* </div> */}
+      </div>
 
       <div className="absolute bottom-10 md:bottom-15 w-full flex justify-center items-center">
         <a href="#about">
