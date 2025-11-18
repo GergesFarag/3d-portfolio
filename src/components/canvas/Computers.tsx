@@ -10,12 +10,12 @@ import {
 } from '../../constants/responsive';
 
 const Computers = ({ screen }: { screen: SCREEN_TYPE }) => {
-  const computer = useGLTF('./test/scene.gltf');
+  const computer = useGLTF('./desktop_pc/scene.gltf');
   const isMobile = screen === 'mobile';
 
   return (
     <>
-      <hemisphereLight intensity={isMobile ? 0.25 : 0.15}/>
+      <hemisphereLight intensity={isMobile ? 0.25 : 0.15} />
       {!isMobile && (
         <spotLight
           position={[-20, 50, 10]}

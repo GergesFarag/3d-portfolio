@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
 import { styles } from '../style';
-import { ComputersCanvas } from './canvas';
+import Lottie from 'lottie-react';
+import landing from '../../public/Programming Computer.json';
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] md:top-[170px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
@@ -24,8 +25,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute inset-0 md:ml-[30%] overflow-hidden z-1">
-        <ComputersCanvas />
+      <div className="absolute inset-0 flex justify-center items-center top-[20%] md:left-[60%] lg:left-[50%] md:mt-0">
+        {/* <ComputersCanvas /> */}
+        <Lottie animationData={landing} />
       </div>
 
       <div className="absolute bottom-10 md:bottom-15 w-full flex justify-center items-center">

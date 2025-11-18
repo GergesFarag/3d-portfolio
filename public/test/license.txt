@@ -1,8 +1,0 @@
-Model Information:
-* title:	H&K P30	"Demon's Roar" l Blue Archive
-* source:	https://sketchfab.com/3d-models/hk-p30-demons-roar-l-blue-archive-9c5d0d93c04b4a6dbe4b2325b4b9e8c9
-* author:	Silkwo猫 (https://sketchfab.com/silkwoah)
-
-Model License:
-* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
-* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
