@@ -29,6 +29,9 @@
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
   },
+  "resolutions": {
+    "camera-controls": "2.9.0"
+  },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/node": "^24.10.0",
