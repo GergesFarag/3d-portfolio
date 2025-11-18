@@ -21,8 +21,7 @@ export const RootLayout = () => {
       <Experience />
       <Tech />
       <Works />
-      <Feedbacks />
-      <div className="relative z-0">
+      <div className="relative z-0 pb-20">
         <Contact />
         <StarsCanvas />
       </div>

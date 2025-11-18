@@ -50,11 +50,10 @@ const BallCanvas = ({ icon, techName }: IProps) => {
         <Suspense fallback={<CanvasLoader />}>
           <OrbitControls
             enableZoom={false}
-            rotateSpeed={0.3}
+            rotateSpeed={0.1}
           />
           <Ball imgUrl={icon} />
         </Suspense>
-
         <Preload all />
       </Canvas>
       <div className="inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-black/70 text-white px-3 py-1.5 rounded-xl text-sm backdrop-blur-sm">

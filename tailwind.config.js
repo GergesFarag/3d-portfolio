@@ -24,17 +24,12 @@ module.exports = {
       },
       animation: {
         'fade-in': 'fadeIn 1s ease-in-out',
-        'grow-up': 'vertical-timeline 1.5s ease-out forward',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
-        'vertical-timeline': {
-          '0%': { width: '0%' },
-          '100%': { width: '100%' },
-        },
+        }
       },
     },
   },
