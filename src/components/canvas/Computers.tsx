@@ -12,27 +12,18 @@ import {
 const Computers = ({ screen }: { screen: SCREEN_TYPE }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
   return (
-    <mesh>
-      {/* <hemisphereLight intensity={0.15}/> */}
-      {/* <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        shadow-mapSize={1024}
-      /> */}
-      {/* <pointLight intensity={1} /> */}
-      <primitive
-        object={computer.scene}
-        scale={screen === 'mobile' ? 0.37 : screen === 'tablet' ? 0.5 : 0.7}
-        position={
-          screen === 'mobile'
-            ? [0, -2, -0.45]
-            : screen === 'tablet'
-            ? [0, -2.5, -1]
-            : [0, -2.3, -1.2]
-        }
-        rotation={[-0.01, -0.9, -0.1]}
-      />
-    </mesh>
+    <primitive
+      object={computer.scene}
+      scale={screen === 'mobile' ? 0.37 : screen === 'tablet' ? 0.5 : 0.7}
+      position={
+        screen === 'mobile'
+          ? [0, -2, -0.45]
+          : screen === 'tablet'
+          ? [0, -2.5, -1]
+          : [0, -2.3, -1.2]
+      }
+      rotation={[-0.01, -0.9, -0.1]}
+    />
   );
 };
 
