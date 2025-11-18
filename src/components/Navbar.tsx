@@ -1,5 +1,4 @@
 import { styles } from '../style';
-import { Link, NavLink } from 'react-router-dom';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 import { useState } from 'react';
@@ -11,13 +10,15 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <NavLink to="" className={'flex items-center gap-2'}>
+        {/* <NavLink to="" className={'flex items-center gap-2'}> */}
+        <a href="#home" className={'flex items-center gap-2'}>
           <img src={logo} alt="logo" className="w-16" />
           <p className="text-white text-[15px] font-bold cursor-pointer">
             Gerges Farag
             <span className="sm:block hidden">| Fullstack Developer</span>
           </p>
-        </NavLink>
+        </a>
+        {/* </NavLink> */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li

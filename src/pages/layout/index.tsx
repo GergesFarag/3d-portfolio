@@ -12,7 +12,7 @@ import {
 
 export const RootLayout = () => {
   return (
-    <div className="relative z-0 bg-primary">
+    <div className="relative z-0 bg-primary" id="home">
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
         <Navbar />
         <Hero />

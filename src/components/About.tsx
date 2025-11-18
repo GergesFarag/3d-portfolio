@@ -15,7 +15,7 @@ const ServiceCard = ({
 }) => {
   return (
     <Tilt
-      className="xs:w-[250px] w-full"
+      className="px-4 xs:w-[250px] md:px-0  w-full"
       options={{
         max: 50,
         scale: 1,
@@ -43,9 +43,8 @@ const ServiceCard = ({
 };
 const About = () => {
   return (
-    <>
+    <div id="about">
       <motion.div
-        id="about"
         variants={textVariant(0)}
         initial="hidden"
         whileInView="show"
@@ -81,7 +80,7 @@ const About = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

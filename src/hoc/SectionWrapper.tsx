@@ -4,7 +4,7 @@ export const SectionWrapper = (Component: React.FC, idName: string) =>
   function HOC() {
     return (
       <motion.section
-        className="mx-auto max-w-5xl px-4"
+        className="mx-auto max-w-5xl px-4 pt-24"
         id={idName}
         variants={staggerContainer()}
         initial="hidden"
