@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px] md:top-[170px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[135px] md:top-[170px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
@@ -25,12 +25,12 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute inset-0 flex justify-center items-center top-[20%] md:left-[60%] lg:left-[50%] md:mt-0">
+      <div className="absolute inset-0 flex justify-center items-center top-[22%] md:left-[60%] lg:left-[50%] md:mt-0">
         {/* <ComputersCanvas /> */}
         <Lottie animationData={landing} />
       </div>
 
-      <div className="absolute bottom-10 md:bottom-15 w-full flex justify-center items-center">
+      <div className="absolute bottom-20 md:bottom-15 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
