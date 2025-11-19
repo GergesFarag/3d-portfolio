@@ -13,6 +13,7 @@ const Tech = () => {
           <BallCanvas key={tech.name} icon={tech.icon} techName={tech.name} />
         ))}
       </div>
+      <p className={`${styles.sectionSubText} text-center`}>And many more...</p>
     </div>
   );
 };
