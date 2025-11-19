@@ -12,7 +12,7 @@ const BallCanvas = memo(({ icon, techName }: IProps) => {
     <div
       className="w-28 h-28 relative group cursor-pointer perspective-1000"
       onMouseEnter={() => setIsHovered(true)}
-      onClick={() => setIsHovered(true)}
+      onClick={() => setIsHovered(!isHovered)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="absolute inset-0 rounded-full bg-violet-500/20 blur-xl group-hover:bg-violet-400/40 transition-all duration-500 animate-pulse-slow" />
@@ -48,6 +48,16 @@ const BallCanvas = memo(({ icon, techName }: IProps) => {
             className="w-full h-full object-contain filter drop-shadow-2xl relative z-10 group-hover:brightness-110 transition-all duration-300"
           />
         </div>
+      </div>
+      <div
+        className={`absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap px-4 py-2 rounded-lg bg-gradient-to-r from-violet-600/95 to-purple-600/95 backdrop-blur-md border border-violet-400/50 text-white text-sm font-semibold shadow-xl shadow-violet-500/30 transition-all duration-300 z-50 ${
+          isHovered
+            ? 'opacity-100 translate-y-0 scale-100'
+            : 'opacity-0 translate-y-2 scale-95 pointer-events-none'
+        }`}
+      >
+        <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-violet-600 border-l border-t border-violet-400/50 rotate-45" />
+        {techName}
       </div>
     </div>
   );
