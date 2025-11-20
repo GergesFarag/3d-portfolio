@@ -35,14 +35,16 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl w-[300px]"
+        className="bg-tertiary flex flex-col justify-between p-5 rounded-2xl w-[300px] h-[500px]"
       >
-        <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover rounded-2xl"
-          />
+        <div className="relative h-[200px] w-full">
+          <div className="absolute inset-0 rounded-2xl overflow-hidden">
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-full object-cover rounded-2xl"
+            />
+          </div>
           <div className="absolute inset-0 flex justify-end m-3 card-img-hover">
             <div
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -56,7 +58,7 @@ const ProjectCard = ({
           <h3 className="text-[17px] font-bold">{name}</h3>
           <p className="text-secondary text-[13px]">{description}</p>
         </div>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 self-end flex flex-wrap gap-2">
           {tags.map((tag) => {
             return (
               <p className={`${tag.color} text-[14px]`} key={tag.name}>
@@ -84,7 +86,7 @@ const Works = () => {
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
       <div className="w-full flex flex-col">
-        <div className=" flex flex-wrap items-center justify-center gap-5">
+        <div className=" flex flex-wrap items-center justify-center gap-x-5 gap-y-12">
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
           ))}

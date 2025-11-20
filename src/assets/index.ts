@@ -29,6 +29,13 @@ import tesla from './company/tesla.png';
 import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
+import nest from './tech/nest.png';
+import express from "./tech/expressjs.svg";
+import angular from "./tech/angular.png";
+import postgres from "./tech/Postgresql_elephant.svg";
+import socketio from "./tech/Socket-io.svg.png";
+import linux from "./tech/linux-22615.png";
+
 export {
   logo,
   backend,
@@ -58,4 +65,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  nest,
+  express,
+  angular,
+  postgres,
+  socketio,
+  linux
 };

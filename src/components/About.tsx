@@ -1,7 +1,7 @@
 import { motion, type Variants } from 'framer-motion';
 import { styles } from '../style';
 import { fadeIn, textVariant } from '../utils/motion';
-import { services } from '../constants';
+import { aboutMe, services } from '../constants';
 import { SectionWrapper } from '../hoc/SectionWrapper';
 import { Tilt } from 'react-tilt';
 const ServiceCard = ({
@@ -61,11 +61,7 @@ const About = () => {
         viewport={{ once: true, amount: 0.25 }}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled full-stack developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        {aboutMe}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
