@@ -58,7 +58,7 @@ const Experience = () => {
   return (
     <>
       <motion.div
-        id="work"
+        id="achievements"
         variants={textVariant(0)}
         initial="hidden"
         whileInView="show"

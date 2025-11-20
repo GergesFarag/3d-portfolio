@@ -18,13 +18,13 @@ module.exports = {
       },
       screens: {
         xs: '450px',
-        
+
       },
       backgroundImage: {
         'hero-pattern': "url('/src/assets/herobg.png')",
       },
       animation: {
-        'fade-in': 'fadeIn 1s ease-in-out',
+        'fade-in': 'fadeIn 0.4s ease-in-out',
       },
       keyframes: {
         fadeIn: {

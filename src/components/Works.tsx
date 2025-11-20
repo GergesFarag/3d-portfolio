@@ -74,7 +74,7 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <div>
+    <div id="projects">
       <motion.div
         variants={textVariant()}
         initial="hidden"
