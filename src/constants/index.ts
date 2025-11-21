@@ -86,44 +86,25 @@ const experiences = [
     company_name: 'Ain Shams University',
     icon: backend,
     iconBg: '#383E56',
-    date: '11/2021 – 07/2025',
+    date: '07/2025',
     points: [
       'Bachelor of Computer Science – Faculty of Computers and Information Science.',
+      'Throw my academic journey, I have developed a solid foundation in computer science principles, programming languages, and software development methodologies.',
     ],
   },
 
   // 📘 MEAN STACK COURSE – NTI
   {
-    title: 'MEAN Stack Course [120 hrs]',
+    title: 'MEAN Stack Course',
     company_name: 'NTI',
     icon: web,
     iconBg: '#E6DEDD',
     date: '2024',
     points: [
       'MEAN Stack Course at NTI with 120 hours of contributions and experiences shared.',
+      'Gained hands-on experience in building full-stack web applications using MongoDB, Express.js, Angular, and Node.js.',
     ],
   },
-  {
-    title: 'NTI – Collaboration Experience',
-    company_name: 'NTI',
-    icon: web,
-    iconBg: '#E6DEDD',
-    date: '2024',
-    points: [
-      'It was a very interesting opportunity to contact with new people and create projects.',
-    ],
-  },
-  {
-    title: 'NTI – Hours Breakdown',
-    company_name: 'NTI',
-    icon: web,
-    iconBg: '#E6DEDD',
-    date: '2024',
-    points: [
-      'Total hours spent were divided into 90 hours for technology and 30 hours for soft-skills.',
-    ],
-  },
-
   // 📘 UDEMY BACKEND COURSE
   {
     title: 'Node.js, Nest.js, PostgreSQL, GraphQL & Security',
@@ -133,41 +114,9 @@ const experiences = [
     date: '2024',
     points: [
       'Node.js, Nest.js, PostgreSQL, GraphQL, and Security, Udemy [39 hours].',
+      'Acquired in-depth knowledge of building robust backend applications using Node.js and Nest.js, integrating PostgreSQL databases, implementing GraphQL APIs, and ensuring application security best practices.',
     ],
   },
-
-  // 📘 CONNECTX
-  {
-    title: 'Pre-Master Web Developer',
-    company_name: 'ConnectX - Student Activity',
-    icon: mobile,
-    iconBg: '#383E56',
-    date: '2023',
-    points: [
-      'Engaged in advanced web development projects, collaborative coding practices, and deploying scalable web applications.',
-    ],
-  },
-
-  // 📘 FRONTEND COURSE – SEF ACADEMY
-  {
-    title: 'Frontend Course [4 months]',
-    company_name: 'SEF Academy',
-    icon: mobile,
-    iconBg: '#383E56',
-    date: '2023',
-    points: ['Frontend Course [4 months], SEF Academy.'],
-  },
-
-  // 📘 NETWORK FUNDAMENTALS – MAHARA TECH
-  {
-    title: 'Fundamentals of Networks',
-    company_name: 'Mahara Tech',
-    icon: web,
-    iconBg: '#E6DEDD',
-    date: '2023',
-    points: ['Fundamentals of Networks, Mahara Tech.'],
-  },
-
   // 📘 WEB SECURE CODE WORKSHOP – CYBERS
   {
     title: 'Web Secure Code Workshop',
@@ -187,6 +136,37 @@ const experiences = [
     date: '2024',
     points: ['Web Development member, MSP - Student Activity.'],
   },
+
+  // 📘 CONNECTX
+  {
+    title: 'Pre-Master Web Developer',
+    company_name: 'ConnectX - Student Activity',
+    icon: mobile,
+    iconBg: '#383E56',
+    date: '2023',
+    points: [
+      'Engaged in advanced web development projects, collaborative coding practices, and deploying scalable web applications.',
+    ],
+  },
+  // 📘 FRONTEND COURSE – SEF ACADEMY
+  {
+    title: 'Frontend Course [4 months]',
+    company_name: 'SEF Academy',
+    icon: mobile,
+    iconBg: '#383E56',
+    date: '2023',
+    points: ['Frontend Course [4 months], SEF Academy.'],
+  },
+
+  // 📘 NETWORK FUNDAMENTALS – MAHARA TECH
+  {
+    title: 'Fundamentals of Networks',
+    company_name: 'Mahara Tech',
+    icon: web,
+    iconBg: '#E6DEDD',
+    date: '2023',
+    points: ['Fundamentals of Networks, Mahara Tech.'],
+  },
 ];
 
 const projects = [
@@ -199,7 +179,7 @@ const projects = [
       { name: 'websockets', color: 'green-text-gradient' },
       { name: 'firebase', color: 'pink-text-gradient' },
     ],
-    image: '../../public/moviesme.jpeg',
+    image: '/moviesme.jpeg',
     source_code_link: 'https://github.com/GergesFarag/MoviesMe',
   },
   {
@@ -211,7 +191,7 @@ const projects = [
       { name: 'nodejs', color: 'green-text-gradient' },
       { name: 'flask', color: 'pink-text-gradient' },
     ],
-    image: "../../public/dietcraft.png",
+    image: '/dietcraft.png',
     source_code_link: 'https://github.com/GergesFarag/DietCraft-Server',
   },
   {
@@ -223,7 +203,7 @@ const projects = [
       { name: 'mongodb', color: 'green-text-gradient' },
       { name: 'bootstrap', color: 'pink-text-gradient' },
     ],
-    image: "../../public/plantry.png",
+    image: '/plantry.png',
     source_code_link: 'https://github.com/GergesFarag/Plantry_eCommerce',
   },
   {
@@ -235,7 +215,7 @@ const projects = [
       { name: 'mongodb', color: 'green-text-gradient' },
       { name: 'ejs', color: 'pink-text-gradient' },
     ],
-    image: "../../public/client.png",
+    image: '/client.png',
     source_code_link: 'https://github.com/GergesFarag/CRUD_SYSTEM_PROJECT',
   },
   {
@@ -246,7 +226,7 @@ const projects = [
       { name: 'c++', color: 'blue-text-gradient' },
       { name: 'filesystem', color: 'green-text-gradient' },
     ],
-    image: "../../public/news.png",
+    image: '/news.png',
     source_code_link: 'https://github.com/GergesFarag/News-management-system',
   },
 ];
